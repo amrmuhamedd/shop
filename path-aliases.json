@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "@domain": ["./core/domain"],
+      "@domain/*": ["./core/domain/*"],
+      "@application/*": ["./core/application/*"],
+      "@infrastructure/*": ["./infrastructure/*"],
+      "@repositories/*": ["./infrastructure/database/typeORM/repositories/*"],
+      "@webAPI/*": ["./webAPI/*"],
+      "@webAPI/": ["./webAPI/"],
+      "@seed": ["../__seeds__"],
+      "@seed/*": ["../__seeds__/*"]
+    }
+  }
+}

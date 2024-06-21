@@ -1,4 +1,4 @@
-import { HelloUseCase } from '../../src/application/usecases/HelloUseCase';
+import { HelloUseCase } from '../../src/core/application/usecases/HelloUseCase';
 
 describe('HelloUseCase', () => {
   it('should return a Hello object with "Hello, World!" message', () => {

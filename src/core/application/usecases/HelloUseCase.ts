@@ -1,4 +1,4 @@
-import { Hello } from '../../domain/entities/Hello';
+import { Hello } from '@domain/entities/Hello';
 
 export class HelloUseCase {
   execute(): Hello {

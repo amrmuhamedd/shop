@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import { HelloController } from '../controller/HelloController';
-import { HelloUseCase } from '../../application/usecases/HelloUseCase';
+import { HelloUseCase } from '@application/usecases/HelloUseCase';
 
 const router = Router();
 const helloController = new HelloController(new HelloUseCase());

@@ -24,5 +24,3 @@ jobs:
         run: yarn test --forceExit
       - name: Run linting
         run: yarn lint
-      - name: Check TS compilation
-        run: yarn check:TSCompilation

@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { HelloUseCase } from '../../application/usecases/HelloUseCase';
+import { HelloUseCase } from '../../core/application/usecases/HelloUseCase';
 
 export class HelloController {
   constructor(private helloUseCase: HelloUseCase) {}

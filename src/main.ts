@@ -1,5 +1,6 @@
+import '../bootstrap';
 import express from 'express';
-import helloRoutes from './webApi/routers/HelloRouter';
+import helloRoutes from '@webAPI/routers/HelloRouter';
 
 const app = express();
 const port = 3000;
