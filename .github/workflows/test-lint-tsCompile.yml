@@ -1,0 +1,28 @@
+name: Test - Lint - Check TS Compilation
+
+on:
+  push:
+    branches: ['main']
+  pull_request:
+    branches: ['main']
+
+jobs:
+  Test-Lint-And-Check-TS-Compilation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Install Node JS
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+      - name: Install dependencies
+        run: yarn install
+      - name: Run testing
+        env:
+          JWT_SIGNING_SECRET: veryStrongSecret
+        run: yarn test --forceExit
+      - name: Run linting
+        run: yarn lint
+      - name: Check TS compilation
+        run: yarn check:TSCompilation
